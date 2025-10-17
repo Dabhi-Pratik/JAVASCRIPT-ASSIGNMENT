@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>Salary</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            width: 100%;
+            height: 100vh;
+            background: url(img/bg.webp);
+            margin: 0px;
+            background-size: cover;
+            background-position: right;
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+            padding-top: 200px;
+        }
+
+        .btn {
+            padding: 9px 17px;
+            border-radius: 14px;
+            border: none;
+            background-color:#ff8a00;
+            color: #00d1d3;
+            font-size: 17px;
+            cursor: pointer
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+
+        }
+
+        #grossSalary h1 {
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form"
+            style="text-align: center;border: 1px solid rgb(241, 236, 236);padding: 30px;width: 450px;margin: auto;">
+            <h1 style="color: #00d1d3;">Gross Salary Calculator</h1>
+            <br>
+            <br>
+
+            <label for="basicSalary" style="color: #ff8a00;font-size:20px;">Basic Salary : </label>
+            <input type="number" id="basicSalary" placeholder="Enter Your Basic Salary">
+            <br>
+            <br>
+            <label for="basicSalary" style="color: #ff8a00;font-size:20px;">HA : </label>
+            <input type="number" id="hra" placeholder="Enter your HRA%">
+            <br>
+            <br>
+            <label for="basicSalary" style="color: #ff8a00;font-size:20px;">DA: </label>
+            <input type="number" id="da" placeholder="Enter your DA%">
+            <br>
+            <br>
+            <label for="basicSalary" style="color: #ff8a00;font-size:20px;">TA: </label>
+            <input type="number" id="ta" placeholder="Enter your TA%">
+            <br>
+            <br>
+            <button type="submit" class="btn">SUBMIT</button>
+            <br>
+            <div id="grossSalary"></div>
+        </form>
+    </div>
+
+    <script src="./salary.js"></script>
+</body>
+
+</html>
