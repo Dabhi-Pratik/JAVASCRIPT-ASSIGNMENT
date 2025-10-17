@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: #f2f2f2; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(img/bill.webp);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+             backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f20808
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ee0d0d;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2>Electricity Bill</h2>
+        
+        <label>Units Consumed: </label>
+        <input type="number" id="unit" placeholder="Enter Units">
+
+
+        <button id="calBtn">Calculate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="./bill.js"></script>
+</body>
+
+</html>
