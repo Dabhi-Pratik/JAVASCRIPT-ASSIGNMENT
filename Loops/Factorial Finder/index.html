@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(328deg, #f8360080, #f9d423b0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 6px;
+            border: 1px solid #999
+        }
+
+        button {
+            width: 90%;
+            padding: 10px;
+            background: linear-gradient(328deg, #f8360080, #f9d423b0);
+            border: none;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Factorial Finder</h2>
+        <form id="form">
+            <input type="number" id="num" placeholder="Enter a Number">
+            <button type="submit">Find Factorial</button>
+        </form>
+        <p id="result"></p>
+
+        <script src="./script.js"></script>
+    </div>
+
+</body>
+
+</html>

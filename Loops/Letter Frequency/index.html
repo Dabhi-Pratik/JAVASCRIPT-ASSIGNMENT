@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Frequency</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #3b82f699, #19aac3);
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            backdrop-filter: blur(12);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 12px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            background: #3b82f6;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        button:hover {
+            background: linear-gradient(120deg, #3b82f699, #19aac3);
+            transform: translateY(-2px);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        td,th {
+            border: 1px solid #ddd;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Letter Frequency</h2>
+
+        <input type="text" id="textbox" placeholder="Enter Any Text">
+        <button id="btn">CHECK</button>
+        <table id="output"></table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
